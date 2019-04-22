@@ -45,8 +45,8 @@ function addStudent(studentObj) {
 $('#new-student-form').submit(function(e){
   e.preventDefault();
   var studentObj = {};
-  studentObj.firstName = $('#firstName').val();
-  studentObj.lastName = $('#lastName').val();
+  studentObj.Username = $('#firstName').val();
+  studentObj.Password = $('#lastName').val();
   studentObj.school = $('#school').val();
   addStudent(studentObj);
   $('#firstName, #lastName, #school').val('');
